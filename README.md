@@ -4,15 +4,15 @@ These are all the files needed to replicate my LaTex workflow in Vim.
 #Examples of use
   
   To create a new homework assignment, I would issue the following commands in the terminal:
-  '''
+  ```
   ./new_hw.sh homework1
-  '''
+  ```
   And a new directory will be created with the homework template and Makefile all set up for you.
   
   in Vim I call the following commands to view the PDF:
-  '''
+  ```
   :!make viewPDF
-  '''
+  ```
   The Makefile is configured to use Evince to read your PDF. Everytime you call `:make` and update the file Evince will refresh the image so you can see your changes.
   
 #Other tips
