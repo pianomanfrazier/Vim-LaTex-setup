@@ -17,5 +17,5 @@ These are all the files needed to replicate my LaTex workflow in Vim.
     LaTex also produces an DVI so you could choose to view that instead with `:!make viewDVI`. I found it didn't work as well as the PDF.
   
 ##Other tips
-  I also use the Vim Extesion UltiSnips github.com/SirVer/ultisnips
+  I also use the Vim Extesion UltiSnips https://github.com/SirVer/ultisnips
   I have also included my snippets.tex file. These are the snippets I use for Differential Equations and Discrete Math. I am constantly changing my snippets as I need them. It has greatly sped up my workflow.
