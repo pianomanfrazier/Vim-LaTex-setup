@@ -19,4 +19,4 @@ These are all the files needed to replicate my LaTex workflow in Vim.
   
 ##Other tips
   I also use the Vim Extesion UltiSnips https://github.com/SirVer/ultisnips
-  I have also included my snippets.tex file. These are the snippets I use for Differential Equations and Discrete Math. I am constantly changing my snippets as I need them. It has greatly sped up my workflow.
+  I have also included my snippets.tex file. This file goes into the `UltiSnips/` directory inside your `.vim/` directory. These are the snippets I use for Differential Equations and Discrete Math. I am constantly changing my snippets as I need them. It has greatly sped up my workflow.
