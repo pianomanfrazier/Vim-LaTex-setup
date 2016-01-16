@@ -7,7 +7,8 @@ These are all the files needed to replicate my LaTex workflow in Vim.
   ```
   ./new_hw.sh homework1
   ```
-  And a new directory `homework1` will be created with the homework template and Makefile all set up for you. I also have another template I was using in an earlier class that required a small "take home" quiz every class.
+  And a new directory `homework1` will be created with the homework template and Makefile all set up for you. Vim and the PDF will also be opened and ready for you to work in. I also have another template I was using in an earlier class that required a small "take home" quiz every class.
+  The `homework_template.tex` is the same file found in `hwtemp/`
   
   in Vim I call the following commands to view the PDF:
   ```
@@ -18,4 +19,4 @@ These are all the files needed to replicate my LaTex workflow in Vim.
   
 ##Other tips
   I also use the Vim Extesion UltiSnips https://github.com/SirVer/ultisnips
-  I have also included my snippets.tex file. These are the snippets I use for Differential Equations and Discrete Math. I am constantly changing my snippets as I need them. It has greatly sped up my workflow.
+  I have also included my snippets.tex file. This file goes into the `UltiSnips/` directory inside your `.vim/` directory. These are the snippets I use for Differential Equations and Discrete Math. I am constantly changing my snippets as I need them. It has greatly sped up my workflow.
