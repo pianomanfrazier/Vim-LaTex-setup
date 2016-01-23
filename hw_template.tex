@@ -4,16 +4,41 @@
 \usepackage[headheight=110pt]{geometry}
 \usepackage{lastpage}
 \usepackage{amsthm,amssymb,amsfonts,amsmath}
+\usepackage{algorithmic, algorithm}
+\usepackage{enumitem}
+
 \pagestyle{fancy}
 \fancyhf{}
 \setlength\parindent{0pt}
 
-\rhead{Your Name Here}
+% this adjusts for left and right closing quotes
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+
+% these are for algorithms
+% Usage:
+% \REQURE is rendered as Input:
+% \ENSURE is rendered as Output:
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\renewcommand{\algorithmiccomment}[1]{\bgroup\hfill//~#1\egroup}
+
+% variables for the template
+\newcommand{\yourName}{Your name here}
+\newcommand{\classNumber}{Class number}
+\newcommand{\instructor}{Instructor name}
+\newcommand{\className}{course}
+\newcommand{\semester}{semester}
+
+\rhead{\yourName}
+\chead{\classNumber}
 \lhead{Homework \# 1}
 \cfoot{Page \thepage \ of \pageref{LastPage}}
 
 \title{Homework \# 1}
-\author{Your Name Here}
+\author{\yourName}
 \date{January 15, 2016}
  
 \begin{document}
@@ -23,21 +48,70 @@
 \clearpage\maketitle
 \centering
 \vspace{2.5cm}
-Math 2280-001 \qquad Ordinary Differential Equations \qquad Spring 2016\\
+\classNumber \qquad \className \qquad \semester\\
 \vspace{0.5cm}
-Professor's Name Here
+\instructor
 \thispagestyle{empty}
 \end{titlepage}
 
-\section{Problem 1.1.26}
+\section{}
+This is an example of lettered enumeration
+\begin{enumerate}[label=(\alph*)]
+	\item
+		Some text here.
+	\item
+	\item
 
-\section{Problem 1.1.28}
+\end{enumerate}
 
-\section{Problem 1.2.8}
+\section{}
+Here is some pseudocode:
+\begin{algorithm}
+\caption{Recursive Fibbonacci}
+\begin{algorithmic}
+\REQUIRE{n}
+\ENSURE{the n\textsuperscript{th} fibbonacci number}
+	\IF{$n \leq 2$}
+		\RETURN{1}	
+	\ENDIF
+	\RETURN{fibb(n-1) + fibb(n-2)}
+\end{algorithmic}
+\end{algorithm}
+\\
+The complexity of the algorithm is $\mathcal{O}(2^n)$.
 
-\section{Problem 1.2.27}
+\section{}
+Write a truth table for the proposition:
+$S = [p\lor(\neg p\lor q)]\land \neg (q\land \neg r)$.\\
+For the table let:
+\begin{align*}
+l &= \neg p \lor q\\
+m &= p \lor (\neg p \lor q)\\
+o &= q \land \neg r\\ 
+\end{align*}
+\begin{table} [!ht]
+\centering
+\begin{tabular} {c c c | c | c | c | c}
+p & q & r & l & m & o & S\\ \hline
+1 & 1 & 1 & 1 & 1 & 0 & 1\\
+1 & 1 & 0 & 1 & 1 & 1 & 0\\
+1 & 0 & 1 & 0 & 1 & 0 & 1\\
+1 & 0 & 0 & 0 & 1 & 0 & 1\\
+0 & 1 & 1 & 1 & 1 & 0 & 1\\
+0 & 1 & 0 & 1 & 1 & 1 & 0\\
+0 & 0 & 1 & 1 & 1 & 0 & 1\\
+0 & 0 & 0 & 1 & 1 & 0 & 1\\
+\end{tabular}
+\end{table}
 
-\section{Problem 1.3.8}
+\section{}
+Here is some complicated math expression:
+\begin{align*}
+	\sum_{i=0}^{\infty}\int_0^{100} x^{ie} \sin^2(x^2)
+\end{align*}
+
+\section{}
 \end{document}
+
 
 
