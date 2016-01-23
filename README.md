@@ -16,7 +16,7 @@ These are all the files needed to replicate my LaTex workflow in Vim.
   ```
   The Makefile is configured to use Evince to read your PDF. Everytime you call `:make` and update the file Evince will refresh the image so you can see your changes.
     LaTex also produces an DVI so you could choose to view that instead with `:!make viewDVI`. I found it didn't work as well as the PDF.
-    And finally call `:make clean` to remove all *.dvi,*.pdf,*.log, and *.aux files.
+    And finally call `:make clean` to remove all dvi, pdf, log, and aux files.
   
 ##Other tips
   I also use the Vim Extesion UltiSnips https://github.com/SirVer/ultisnips
