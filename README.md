@@ -28,6 +28,5 @@ I have also included my snippets.tex file. This file goes into the `UltiSnips/` 
 
 To be able to use the packages used in the template you will need to install the following (in Ubuntu):
 ```
-$sudo apt-get install texlive
-$sudo apt-get install texlive-science
+$sudo apt-get install texlive texlive-science texlive-latex-extra
 ```
